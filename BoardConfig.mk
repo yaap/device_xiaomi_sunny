@@ -116,6 +116,7 @@ TARGET_KERNEL_NEW_GCC_COMPILE := true
 TARGET_KERNEL_CONFIG := neternels_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sunny
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+BOARD_RAMDISK_USE_LZ4 := true
 
 # Media
 TARGET_USES_ION := true
