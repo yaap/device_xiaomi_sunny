@@ -88,8 +88,8 @@ void LocAdapterBase::
                         const GpsLocationExtended& locationExtended,
                         enum loc_sess_status status,
                         LocPosTechMask loc_technology_mask,
-                        GnssDataNotification* /*pDataNotify*/,
-                        int /*msInWeek*/)
+                        GnssDataNotification* pDataNotify __unused,
+                        int msInWeek __unused)
 {
     if (mLocAdapterProxyBase != NULL) {
         mLocAdapterProxyBase->reportPositionEvent((UlpLocation&)location,
@@ -433,7 +433,7 @@ LocAdapterBase::reportLatencyInfoEvent(const GnssLatencyInfo& /*gnssLatencyInfo*
 DEFAULT_IMPL()
 
 bool LocAdapterBase::
-    reportQwesCapabilities(const std::unordered_map<LocationQwesFeatureType, bool> &featureMap)
+    reportQwesCapabilities(const std::unordered_map<LocationQwesFeatureType, bool> &/*featureMap*/)
 DEFAULT_IMPL(false)
 
 } // namespace loc_core
