@@ -82,8 +82,6 @@ on fs
     chmod 644 /persist/audio/us_manual_cal
 
 on late-fs
-    wait_for_prop hwservicemanager.ready true
-    exec_start wait_for_keymaster
     mount_all --late /vendor/etc/fstab.default
 
 service mi_thermald /system/vendor/bin/mi_thermald
