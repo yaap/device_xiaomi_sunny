@@ -526,7 +526,7 @@ vendor/etc/init/vendor.display.color@1.0-service.rc
 -vendor/lib64/vendor.display.postproc@1.0.so
 
 # DPM
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 -system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
@@ -851,7 +851,7 @@ vendor/etc/sec_config
 -vendor/lib64/libqsocket.so
 
 # RIL
-etc/sysconfig/qti_whitelist.xml
+system/etc/sysconfig/qti_whitelist.xml
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
