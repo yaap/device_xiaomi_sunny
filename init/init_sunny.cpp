@@ -78,21 +78,11 @@ void vendor_load_properties() {
 
     std::string sku = GetProperty("ro.boot.product.hardware.sku","sunny");
     std::string model = "M2101K7AG";
-    std::string device;
-    std::string mod_device;
     std::string marketname = "Redmi Note 10";
 
-    if (sku == "mojito") {
-        device = "mojito";
-        mod_device = "mojito_global";
-    } else {
-        device = "sunny";
-        mod_device = "sunny_global";
-    }
-
-    set_ro_product_prop("device", device);
+    set_ro_product_prop("device", sku);
     set_ro_product_prop("model", model);
-    property_override("ro.product.mod_device", mod_device.c_str());
+    property_override("ro.product.mod_device", "sunny_global");
     property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("vendor.usb.product_string", marketname.c_str());
     load_dalvik_properties();

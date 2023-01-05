@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/mojito/mojito-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sunny/sunny-vendor.mk)
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -231,7 +231,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.mojito
+    android.hardware.biometrics.fingerprint@2.1-service.sunny
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -439,7 +439,7 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.xiaomi_mojito-multihal
+    android.hardware.sensors@2.1-service.xiaomi_sunny-multihal
 
 # Sensors configs
 PRODUCT_COPY_FILES += \
