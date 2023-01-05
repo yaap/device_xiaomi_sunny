@@ -67,16 +67,6 @@ void load_dalvik_properties() {
     }
 }
 
-void set_ro_build_prop(const std::string &prop, const std::string &value) {
-    for (const auto &source : ro_props_default_source_order) {
-        auto prop_name = "ro." + source + "build." + prop;
-        if (source == "")
-            property_override(prop_name.c_str(), value.c_str());
-        else
-            property_override(prop_name.c_str(), value.c_str(), false);
-    }
-};
-
 void set_ro_product_prop(const std::string &prop, const std::string &value) {
     for (const auto &source : ro_props_default_source_order) {
         auto prop_name = "ro.product." + source + prop;
@@ -86,36 +76,22 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 
 void vendor_load_properties() {
 
-    std::string sku;
-    sku = GetProperty("ro.boot.product.hardware.sku","sunny");
-
-    std::string model;
+    std::string sku = GetProperty("ro.boot.product.hardware.sku","sunny");
+    std::string model = "M2101K7AG";
     std::string device;
-    std::string fingerprint;
-    std::string description;
     std::string mod_device;
-    std::string marketname;
+    std::string marketname = "Redmi Note 10";
 
     if (sku == "mojito") {
-        model = "M2101K7AG";
         device = "mojito";
-        fingerprint = "Redmi/mojito/mojito:12/RKQ1.210614.002/V13.0.10.0.SKGMIXM:user/release-keys";
-        description = "mojito-user 12 RKQ1.210614.002 V13.0.10.0.SKGMIXM release-keys";
         mod_device = "mojito_global";
-        marketname = "Redmi Note 10";
     } else {
-        model = "M2101K7AG";
         device = "sunny";
-        fingerprint = "Redmi/sunny_global/sunny:12/RKQ1.210614.002/V13.0.10.0.SKGMIXM:user/release-keys";
-        description = "sunny_global-user 12 RKQ1.210614.002 V13.0.10.0.SKGMIXM release-keys";
         mod_device = "sunny_global";
-        marketname = "Redmi Note 10";
     }
 
-    set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
-    property_override("ro.build.description", description.c_str());
     property_override("ro.product.mod_device", mod_device.c_str());
     property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("vendor.usb.product_string", marketname.c_str());
