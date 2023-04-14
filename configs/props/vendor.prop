@@ -161,6 +161,13 @@ vendor.display.enable_default_color_mode=1
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
+ro.vendor.display.svi=1
+vendor.display.svi.config=1
+vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+ro.vendor.display.sensortype=2
+ro.vendor.histogram.enable=false
+ro.vendor.bcbc.enable=fasle
+ro.vendor.bl.poll=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
