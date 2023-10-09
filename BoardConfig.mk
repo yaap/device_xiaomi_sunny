@@ -58,6 +58,7 @@ TARGET_OTA_ASSERT_DEVICE := mojito|sunny|mojito_global|sunny_global
 
 # Camera
 TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.sunny
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
