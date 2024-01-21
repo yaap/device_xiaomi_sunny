@@ -176,6 +176,10 @@ vendor.display.enable_optimize_refresh=1
 vendor.display.override_doze_mode=1
 vendor.gralloc.disable_ubwc=0
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.sensor_location=1080|925|115|local:4630946773257169537
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
