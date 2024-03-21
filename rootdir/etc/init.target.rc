@@ -131,7 +131,6 @@ on boot
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
-    setprop sys.usb.configfs 1
 
     # Set fingerprint related permissions
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/fingerdown_wait
@@ -199,7 +198,6 @@ on property:sys.shutdown.requested=*
 
 on charger
     setprop sys.usb.controller a600000.dwc3
-    setprop sys.usb.configfs 1
 
     wait /dev/block/platform/soc/1da4000.ufshc/by-name/system
     mount erofs /dev/block/platform/soc/1da4000.ufshc/by-name/system / ro
