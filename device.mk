@@ -462,8 +462,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
-    hardware/qcom-caf/wlan
+    hardware/xiaomi
 
 # Task Profiles
 PRODUCT_COPY_FILES += \
