@@ -160,6 +160,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!--
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.cacert</name>
         <version>1.0</version>
@@ -168,6 +169,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+    -->
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.capabilityconfigstore</name>
         <version>1.0</version>
