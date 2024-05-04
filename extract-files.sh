@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/lib64/camera/components/com.qti.node.watermark.so)
             ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/android.hardware.camera.provider@2.4-legacy.so)
+            grep -q "libcamera_provider_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
+            ;;
     esac
 }
 
