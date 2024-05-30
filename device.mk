@@ -130,8 +130,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    android.frameworks.displayservice@1.0.vendor
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
