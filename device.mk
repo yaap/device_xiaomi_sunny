@@ -285,6 +285,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     KProfiles
 
+# Kernel
+LOCAL_KERNEL := device/xiaomi/sunny-kernel/Image
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi

@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/sunny
+KERNEL_PATH := device/xiaomi/sunny-kernel
 
 # Inherit from proprietary files
 include vendor/xiaomi/sunny/BoardConfigVendor.mk
@@ -109,14 +110,16 @@ BOARD_KERNEL_CMDLINE += init.is_dt2w_sensor=1
 BOARD_KERNEL_CMDLINE += init.is_st2w_sensor=1
 BOARD_KERNEL_CMDLINE += init.is_legacy_ebpf=1
 
-BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CLANG_COMPILE := false
-TARGET_KERNEL_NEW_GCC_COMPILE := true
-TARGET_KERNEL_CONFIG := neternels_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sunny
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
+
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
+BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/sm6150.dtb
 
 # Media
 TARGET_USES_ION := true
