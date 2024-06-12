@@ -331,6 +331,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureSunny \
     CarrierConfigSunny \
+    DeviceAsWebcamSunny \
     DisableQTIAppsSunny \
     DisplayFeaturesSunny \
     FrameworksSunny \
