@@ -588,7 +588,7 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 
 # Fingerprint
 -vendor/lib64/hw/fingerprint.fpc.default.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
--vendor/lib64/com.fingerprints.extension@1.0.so
+-vendor/lib64/com.fingerprints.extension@1.0.so;MODULE=com.fingerprints.extension@1.0_sunny
 -vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # FM
