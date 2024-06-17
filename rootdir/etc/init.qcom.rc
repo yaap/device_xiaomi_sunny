@@ -322,7 +322,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
     group root
     task_profiles ServiceCapacityLow
 
-on property:init.svc.vendor.charger=running
+on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
 
