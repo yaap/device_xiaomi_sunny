@@ -276,7 +276,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libsns_device_mode_stub.so
 -vendor/lib64/libsns_registry_skel.so
 -vendor/lib64/libswregistrationalgo.so
--vendor/lib64/libswvdec.so
 -vendor/lib64/libtriplecam_optical_zoom_control.so
 -vendor/lib64/libtriplecam_video_optical_zoom.so
 -vendor/lib64/libvideofilter_only.so
@@ -764,15 +763,11 @@ vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 -system_ext/lib64/libmmparser_lite.so
 -system_ext/lib64/libmmrtpdecoder.so
 -system_ext/lib64/libmmrtpencoder.so
--vendor/bin/hw/vendor.qti.media.c2@1.0-service
 -vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/seccomp_policy/codec2.vendor.base.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libFileMux_proprietary.so
--vendor/lib/libMpeg4SwEncoder.so
 -vendor/lib/libOmxAacDec.so
 -vendor/lib/libOmxAlacDec.so
 -vendor/lib/libOmxAlacDecSw.so
@@ -784,9 +779,6 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libOmxEvrcDec.so
 -vendor/lib/libOmxG711Dec.so
 -vendor/lib/libOmxQcelp13Dec.so
--vendor/lib/libOmxSwVdec.so
--vendor/lib/libOmxSwVencMpeg4.so
--vendor/lib/libOmxVideoDSMode.so
 -vendor/lib/libOmxVpp.so
 -vendor/lib/libOmxWmaDec.so
 -vendor/lib/libdsd2pcm.so
@@ -794,19 +786,12 @@ vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 -vendor/lib/libmmrtpdecoder_proprietary.so
 -vendor/lib/libmmrtpencoder_proprietary.so
 -vendor/lib/libqcodec2.so
--vendor/lib/libswvdec.so
 -vendor/lib/libvppclient.so
 -vendor/lib/libvpphvx.so
 -vendor/lib/libvpplibrary.so
--vendor/lib/vendor.qti.hardware.vpp@1.1.so
--vendor/lib/vendor.qti.hardware.vpp@1.2.so
--vendor/lib/vendor.qti.hardware.vpp@1.3.so
 -vendor/lib64/libmmosal.so
 -vendor/lib64/libvpphvx.so
 -vendor/lib64/libvpplibrary.so
--vendor/lib64/vendor.qti.hardware.vpp@1.1.so
--vendor/lib64/vendor.qti.hardware.vpp@1.2.so
--vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # Native libraries permissions
 vendor/etc/public.libraries.txt
