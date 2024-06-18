@@ -74,8 +74,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libtinycompress \
-    libtinycompress.vendor
+    libtinycompress
 
 # Audio XML
 PRODUCT_COPY_FILES += \
@@ -171,7 +170,6 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -345,9 +343,7 @@ PRODUCT_COPY_FILES += \
 
 # Netd
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor
+    android.system.net.netd@1.1.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
