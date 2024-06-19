@@ -17,8 +17,8 @@
 -->
 <Included>
     <Decoders>
-        <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
-        <MediaCodec name="OMX.google.raw.decoder" type="audio/raw" update="true" rank="1"/>
+        <MediaCodec name="c2.android.opus.decoder" type="audio/opus" update="true" rank="100"/>
+        <MediaCodec name="c2.android.raw.decoder" type="audio/raw" update="true" rank="1"/>
         <!-- SimpleOMXComponet based software decoder-->
     </Decoders>
 </Included>
