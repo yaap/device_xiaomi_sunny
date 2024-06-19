@@ -69,6 +69,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     audio.usb.default \
     audio.r_submix.default \
+    libaudioroute.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -313,7 +314,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
-    libstagefright_omx.vendor
+    libstagefright_omx.vendor \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
@@ -490,6 +492,16 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+
+# VNDK
+PRODUCT_PACKAGES += \
+    libutilscallstack.vendor:64 \
+    libnetutils.vendor:64 \
+    libsqlite.vendor:64 \
+    libprocessgroup.vendor \
+    libjsoncpp.vendor \
+    libcurl.vendor \
+    libpng.vendor:32
 
 # Vulkan
 PRODUCT_PACKAGES += \
