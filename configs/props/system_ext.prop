@@ -20,3 +20,4 @@ media.stagefright.enable-http=true
 media.stagefright.enable-scan=true
 media.stagefright.enable-player=true
 media.stagefright.enable-fma2dp=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
