@@ -449,7 +449,9 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+    usb_compositions.conf \
+    android.hardware.usb@1.0-service \
+    android.hardware.usb.gadget@1.2-service-qti
 
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
