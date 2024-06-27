@@ -61,6 +61,12 @@ function blob_fixup() {
         vendor/lib64/android.hardware.camera.provider@2.4-legacy.so)
             grep -q "libcamera_provider_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_provider_shim.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc)
+            grep -q "task_profiles" "${2}" || sed -i "s|writepid /dev/cpuset/foreground/tasks|task_profiles ProcessCapacityHigh HighPerformance|g" "${2}"
+            ;;
+        vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc)
+            grep -q "task_profiles" "${2}" || sed -i "s|writepid /dev/stune/nnapi-hal/tasks|task_profiles NNApiHALPerformance|g" "${2}"
+            ;;
     esac
 }
 
