@@ -36,7 +36,10 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    ('vendor.qti.imsrtpservice@3.0',): lib_fixup_vendor_suffix,
+    (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'vendor.qti.imsrtpservice@3.0',
+    ): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
