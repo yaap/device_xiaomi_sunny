@@ -56,9 +56,6 @@
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi           u:object_r:hal_light_default_exec:s0
 
-# Memtrack AIDL HAL
-/(vendor|system/vendor)/bin/hw/vendor\.qti.hardware\.memtrack-service   u:object_r:hal_memtrack_default_exec:s0
-
 # Mi Thermal
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1(/.*)?      u:object_r:sysfs_thermal:s0
 
