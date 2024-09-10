@@ -205,7 +205,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libcrypto_shim
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -472,7 +473,6 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libcrypto-v33 \
     libutilscallstack.vendor:64 \
     libnetutils.vendor:64 \
     libsqlite.vendor:64 \
