@@ -34,14 +34,12 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a55
 TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 
-ifeq (,$(filter %_64,$(TARGET_PRODUCT)))
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
-endif
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
