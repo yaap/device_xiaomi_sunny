@@ -1,4 +1,5 @@
 runtime_resource_overlay {
+    aaptflags: ["--keep-raw-values"],
     name: "CarrierConfigSunny",
     theme: "CarrierConfigSunny",
     sdk_version: "current",
