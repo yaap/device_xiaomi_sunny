@@ -221,6 +221,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
     android.hardware.biometrics.fingerprint-service.xiaomi
 
 PRODUCT_COPY_FILES += \
