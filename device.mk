@@ -178,6 +178,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service
 
 PRODUCT_PACKAGES += \
+    gralloc.qcom \
     hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
