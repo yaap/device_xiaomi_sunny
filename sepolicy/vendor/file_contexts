@@ -26,9 +26,6 @@
 # Files in rootfs
 /avb(/.*)?                                 u:object_r:avb_file:s0
 
-# Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi            u:object_r:hal_fingerprint_default_exec:s0
-
 # Fingerprint - data
 /data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
