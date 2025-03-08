@@ -11,7 +11,6 @@ KERNEL_PATH := device/xiaomi/sunny-kernel
 include vendor/xiaomi/sunny/BoardConfigVendor.mk
 
 # A/B
-AB_OTA_UPDATER := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
 
