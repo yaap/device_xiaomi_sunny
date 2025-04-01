@@ -1,6 +1,15 @@
 # All unpinned blobs below are extracted from sunny-user 12 RKQ1.210614.002 V14.0.9.0.SKGMIXM
 
 # ACDB
+vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
+vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 vendor/etc/acdbdata/IDP/india/INDIA_Bluetooth_cal.acdb
 vendor/etc/acdbdata/IDP/india/INDIA_Codec_cal.acdb
 vendor/etc/acdbdata/IDP/india/INDIA_General_cal.acdb
@@ -19,15 +28,6 @@ vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Hdmi_cal.acdb
 vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Headset_cal.acdb
 vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Speaker_cal.acdb
 vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_workspaceFile.qwsp
-vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
@@ -100,10 +100,6 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 -vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
--vendor/lib/soundfx/libmisoundfx.so
--vendor/lib/soundfx/libqcbassboost.so
--vendor/lib/soundfx/libqcreverb.so
--vendor/lib/soundfx/libqcvirt.so
 -vendor/lib/liba2dpoffload.so
 -vendor/lib/libacdb-fts.so
 -vendor/lib/libacdbloader.so
@@ -127,6 +123,10 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 -vendor/lib/libspkrprot.so
 -vendor/lib/libssrec.so
 -vendor/lib/libsurround_3mic_proc.so
+-vendor/lib/soundfx/libmisoundfx.so
+-vendor/lib/soundfx/libqcbassboost.so
+-vendor/lib/soundfx/libqcreverb.so
+-vendor/lib/soundfx/libqcvirt.so
 
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
@@ -145,18 +145,18 @@ vendor/etc/init/init.batterysecret.rc
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+-vendor/lib/btaudio_offload_if.so
 -vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 -vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
--vendor/lib/btaudio_offload_if.so
 -vendor/lib/libbluetooth_audio_session_qti.so
 -vendor/lib/libbluetooth_audio_session_qti_2_1.so
 -vendor/lib/libsoc_helper.so
+-vendor/lib64/btaudio_offload_if.so
 -vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 -vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 -vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 -vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 -vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
--vendor/lib64/btaudio_offload_if.so
 -vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 -vendor/lib64/libbtnv.so
 -vendor/lib64/libsoc_helper.so
@@ -301,12 +301,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 # Camera Configs
 vendor/etc/K7A/para_ini_cal_w_d_0.bin
 vendor/etc/K7A/para_ini_cal_w_uw_1.bin
-vendor/etc/camera/model/dof_model/capture_cache
-vendor/etc/camera/model/dof_model/capture_model
-vendor/etc/camera/model/dof_model/capture_policy
-vendor/etc/camera/model/rt_model/preview_cache
-vendor/etc/camera/model/rt_model/preview_model
-vendor/etc/camera/model/rt_model/preview_policy
 vendor/etc/camera/102_SummerDay.png
 vendor/etc/camera/103_Fantasy.png
 vendor/etc/camera/104_Meet.png
@@ -344,6 +338,12 @@ vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
+vendor/etc/camera/model/dof_model/capture_cache
+vendor/etc/camera/model/dof_model/capture_model
+vendor/etc/camera/model/dof_model/capture_policy
+vendor/etc/camera/model/rt_model/preview_cache
+vendor/etc/camera/model/rt_model/preview_model
+vendor/etc/camera/model/rt_model/preview_policy
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/sceneDetection.xml
@@ -354,7 +354,6 @@ vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/watermark_font_2300_3199.dat
 
 # Camera Components
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.almalence.node.sr.so
 -vendor/lib64/camera/components/com.altek.node.depurple.so
 -vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
@@ -421,6 +420,7 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/com.xiaomi.node.mifragment.so
 -vendor/lib64/camera/components/com.xiaomi.node.mimovie.so
 -vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml
 -vendor/lib64/camera/components/libdepthmapwrapper.so
 -vendor/lib64/camera/components/libmmcamera_cac3.so
 
@@ -547,8 +547,8 @@ vendor/etc/init/dpmQmiMgr.rc
 
 # DRM
 -vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
 vendor/etc/gpfspath_oem_config.xml
+vendor/etc/init/qseecomd.rc
 -vendor/lib64/libGPreqcancel.so
 -vendor/lib64/libGPreqcancel_svc.so
 -vendor/lib64/libQSEEComAPI.so
@@ -572,8 +572,8 @@ vendor/etc/gpfspath_oem_config.xml
 -vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
--vendor/lib64/mediadrm/libwvdrmengine.so
 -vendor/lib64/libwvhidl.so
+-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # DSP
 -vendor/bin/dspservice
@@ -582,8 +582,8 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 -vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint
--vendor/lib64/hw/fingerprint.fpc.default.so:vendor/lib64/hw/fingerprint.default.so
 -vendor/lib64/com.fingerprints.extension@1.0.so;MODULE=com.fingerprints.extension@1.0_sunny
+-vendor/lib64/hw/fingerprint.fpc.default.so:vendor/lib64/hw/fingerprint.default.so
 -vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # FM
@@ -857,8 +857,8 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--vendor/bin/hw/qcrild
 -vendor/bin/adpl
+-vendor/bin/hw/qcrild
 -vendor/bin/netmgrd
 -vendor/bin/qti
 -vendor/bin/rmt_storage
@@ -915,6 +915,7 @@ vendor/etc/init/vendor.qti.tftp.rc
 -vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 -vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 -vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
+vendor/radio/qcril_database/qcril.db
 vendor/radio/qcril_database/upgrade/0_initial.sql
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql
@@ -943,7 +944,6 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table_127531.sql
-vendor/radio/qcril_database/qcril.db
 
 # Sensors
 -vendor/bin/sensors.qti
@@ -969,6 +969,7 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 -vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors Config
+vendor/etc/elliptic_sensor.xml
 vendor/etc/sensors/config/adux1050_0.json
 vendor/etc/sensors/config/bmi160_0.json
 vendor/etc/sensors/config/lsm6ds3c_0.json
@@ -1016,7 +1017,6 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/sns_reg_config
-vendor/etc/elliptic_sensor.xml
 
 # Thermal
 -vendor/bin/mi_thermald
