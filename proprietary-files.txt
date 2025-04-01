@@ -47,6 +47,7 @@ vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib/libcdsp_default_listener.so
+vendor/lib/libcdsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libcdsp_default_listener.so
@@ -157,6 +158,7 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
+vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
@@ -279,6 +281,7 @@ vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
+vendor/lib64/libwa_dof.so
 vendor/lib64/libwa_rtdof.so
 vendor/lib64/libxmi_high_dynamic_range.so
 
@@ -578,6 +581,7 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint
