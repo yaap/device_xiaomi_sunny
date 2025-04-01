@@ -649,13 +649,6 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # IMS
-system_ext/app/ImsRcsService/ImsRcsService.apk|7e29c11b52bce9bdb33d0ea364faa13150b8cd08
-system_ext/app/uceShimService/uceShimService.apk
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|e01800d96b0db524836856410d3dd0b9352ec46c
-system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -664,13 +657,6 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
-system_ext/lib64/vendor.qti.ims.factory@1.0.so
-system_ext/lib64/vendor.qti.ims.factory@1.1.so
-system_ext/lib64/vendor.qti.ims.factory@2.0.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so
-system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
