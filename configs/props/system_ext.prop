@@ -20,3 +20,4 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
