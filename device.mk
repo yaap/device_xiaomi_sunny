@@ -196,9 +196,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.fastbootd.available=true
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.lineage
