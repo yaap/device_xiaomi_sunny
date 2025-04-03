@@ -191,6 +191,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
+$(call soong_config_set,qtimedia,disabled_ubwc,true)
+
 PRODUCT_PACKAGES += \
     disable_configstore
 
