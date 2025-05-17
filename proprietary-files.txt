@@ -429,6 +429,9 @@ vendor/lib64/camera/components/libmmcamera_cac3.so
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera Provider
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+
 # Charger
 vendor/bin/hvdcp_opti
 
