@@ -14,16 +14,6 @@
 // limitations under the License.
 //
 
-cc_library_static {
-    name: "libinit_sunny",
-    srcs: ["init_sunny.cpp"],
-    recovery_available: true,
-    include_dirs: [
-        "system/core/init",
-    ],
-    shared_libs: ["libbase"],
-}
-
 sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "init.qcom.early_boot.sh",
