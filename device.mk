@@ -276,7 +276,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureSunny \
     CarrierConfigSunny \
-    DisableQTIAppsSunny \
     DisplayFeaturesSunny \
     FrameworksSunny \
     OpenDeltaSunny \
@@ -296,6 +295,7 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     $(LOCAL_PATH)/configs/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
 
 # Platform
@@ -303,8 +303,7 @@ MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 TARGET_COMMON_QTI_COMPONENTS := \
-    adreno \
-    perf
+    adreno
 
 # Power
 PRODUCT_PACKAGES += \
