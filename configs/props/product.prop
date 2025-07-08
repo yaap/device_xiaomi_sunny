@@ -2,6 +2,9 @@
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 
+# eBPF
+ro.bpf.kver_override=5.4.299
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
