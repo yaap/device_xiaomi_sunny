@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 The LineageOS Project
+     Copyright (C) 2023-2025 cyberknight777
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Display Features -->
+    <string name="display_features_info">Anti-Flicker Mode (AFM) reduces eye strain in low light conditions. (Note: reduces image quality and color production)\n\nHigh Brightness Mode (HBM) allows the display panel brightness to go above the maximums stock value. Which helps in improving visibility in direct sunlight.\n\nFPS Overlay shows overlay with current frames per second.</string>
+
+</resources>
