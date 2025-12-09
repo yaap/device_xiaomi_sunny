@@ -671,4 +671,8 @@
     <!-- media controls -->
     <bool name="config_mediaControlsTurbulenceByDefault">false</bool>
 
+    <!-- Whether WM DisplayContent supports high performance transitions
+         (lower-end devices may want to disable) -->
+    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+
 </resources>
