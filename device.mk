@@ -302,9 +302,6 @@ PRODUCT_COPY_FILES += \
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
-TARGET_COMMON_QTI_COMPONENTS := \
-    adreno
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -399,6 +396,10 @@ PRODUCT_PACKAGES += \
 # Vulkan
 PRODUCT_PACKAGES += \
     libvulkan
+
+# Vendor Service Manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
 
 # WiFi
 PRODUCT_PACKAGES += \
