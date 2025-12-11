@@ -61,6 +61,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open')
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
+    'vendor/lib64/liblearningmodule.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/android.hardware.camera.provider@2.4-legacy.so': blob_fixup()
         .add_needed('libcamera_provider_shim.so')
 }  # fmt: skip
