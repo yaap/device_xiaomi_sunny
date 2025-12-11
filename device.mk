@@ -83,6 +83,7 @@ PRODUCT_COPY_FILES += \
 
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Bluetooth
 PRODUCT_PACKAGES += \
