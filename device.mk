@@ -282,6 +282,7 @@ PRODUCT_PACKAGES += \
     DisplayFeaturesSunny \
     FrameworksSunny \
     OpenDeltaSunny \
+    Launcher3Sunny \
     SettingsProviderSunny \
     SettingsSunny \
     SystemUISunny \
