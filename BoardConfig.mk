@@ -97,7 +97,6 @@ BOARD_KERNEL_CMDLINE += kpti=off
 BOARD_KERNEL_CMDLINE += init.is_inline=1
 BOARD_KERNEL_CMDLINE += init.is_dt2w_sensor=1
 BOARD_KERNEL_CMDLINE += init.is_st2w_sensor=1
-BOARD_KERNEL_CMDLINE += init.is_legacy_ebpf=1
 
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
