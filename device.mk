@@ -112,9 +112,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.lineage
 
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor
-
-PRODUCT_PACKAGES += \
     camxoverridesettings.txt
 
 PRODUCT_COPY_FILES += \
